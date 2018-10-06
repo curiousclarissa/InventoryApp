@@ -75,8 +75,8 @@
             android:orientation="vertical">
 
             <!-- Gender drop-down spinner -->
-            <Spinner
-                android:id="@+id/spinner_gender"
+            <EditText
+                android:id="@+id/edit_gender"
                 android:layout_height="48dp"
                 android:layout_width="wrap_content"
                 android:paddingRight="16dp"
