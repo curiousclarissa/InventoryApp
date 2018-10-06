@@ -43,7 +43,7 @@ public final class ProductContract {
          *
          * Type: TEXT
          */
-        public final static int COLUMN_PRODUCT_PRICE = "price";
+        public final static String COLUMN_PRODUCT_PRICE = "price";
 
 
         /**
