@@ -58,8 +58,10 @@ public class CatalogActivity extends AppCompatActivity {
         String[] projection = {
                 ProductEntry._ID,
                 ProductEntry.COLUMN_PRODUCT_NAME,
+                ProductEntry.COLUMN_PRODUCT_PRICE,
                 ProductEntry.COLUMN_PRODUCT_QUANITTY,
-                ProductEntry.COLUMN_SUPPLIER_NAME};
+                ProductEntry.COLUMN_SUPPLIER_NAME,
+                ProductEntry.COLUMN_SUPPLIER_PHONE};
 
         // Perform a query on the pets table
         Cursor cursor = db.query(
@@ -76,8 +78,8 @@ public class CatalogActivity extends AppCompatActivity {
         try {
             // Create a header in the Text View that looks like this:
             //
-            // The pets table contains <number of rows in Cursor> pets.
-            // _id - name - breed - gender - weight
+            // The pets table contains <number of rows in Cursor> products.
+            // _id - name - price - quantity - supplier name - supplier phone
             //
             // In the while loop below, iterate through the rows of the cursor and display
             // the information from each column in this order.
